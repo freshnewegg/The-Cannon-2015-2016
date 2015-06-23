@@ -37,7 +37,6 @@
 					<h1 class="site-title"><?php bloginfo('name'); ?></h1>
 			<?php endif; ?>
 				</a>
-				
 			<?php // Display Tagline on header if activated
 			if ( isset($theme_options['header_tagline']) and $theme_options['header_tagline'] == true ) : ?>			
 				<h2 class="site-description"><?php echo bloginfo('description'); ?></h2>
@@ -47,6 +46,10 @@
 			
 			<div id="header-content" class="clearfix">
 				<?php locate_template('/inc/header-content.php', true); ?>
+			</div>
+
+			<!--this is onasvi's weather-->
+			<div id="weather">
 			</div>
 	
 
@@ -65,5 +68,4 @@
 	
 	<?php // Display Custom Header Image
 		dynamicnews_display_custom_header(); ?>
-			<div id="weather"></div>
 		

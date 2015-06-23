@@ -36,10 +36,15 @@ Version: 1.0
 #header-content div {
        margin-top:1.5em;
        margin-right:1.5em;
+       margin-left:0em;
 }
 #header-content{
     display: inline-block;
     float:right;
+}
+
+#header-search{
+    padding-top:0.6em;
 }
 
 #header-wrap {
@@ -47,7 +52,6 @@ Version: 1.0
         max-width: 100%;
         background: rgb(0, 42, 92) none repeat scroll 0% 0%;
        border-bottom: 1px solid #000;
-       text-align:end;
 }
 /*NAVIGATION*/
 #navi-wrap {
@@ -141,10 +145,13 @@ html {
   border-radius:20px;
   border-style: solid;
   border-width: 1px;
+  border-color: white;
+  float: right;
+  margin-right:1.5em
 }
 
 i {
-  color: #000;
+  color: white;
   font-family: weather;
   font-size: 21px;
   font-weight: normal;
@@ -203,7 +210,7 @@ i {
 
 #weather h2 {
   margin: 0 0 2px;
-  color: #000;
+  color: white;
   font-size: 14px;
   font-weight: 300;
   text-align: center;
@@ -227,3 +234,17 @@ i {
   margin: 0 20px;
 }
 /*end of weather*/
+
+/*start of body*/
+
+/*news*/
+#news{
+  width: 27%%;
+  float:left;
+}
+
+#content{
+  width: 45%;
+}
+
+/*end of body*/
