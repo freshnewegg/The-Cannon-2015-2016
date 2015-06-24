@@ -50,6 +50,7 @@ if ( ! function_exists( 'dynamicnews_display_postmeta' ) ):
 		</span>
 		
 		<span class="meta-author sep">
+		<?php printf("By ") ?>
 		<?php printf(__('<a href="%1$s" title="%2$s" rel="author">%3$s</a>', 'dynamicnews'), 
 				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 				esc_attr( sprintf( __( 'View all posts by %s', 'dynamicnews' ), get_the_author() ) ),
