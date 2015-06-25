@@ -22,11 +22,12 @@ Version: 1.0
 }
 .widget {
     padding:1em;
+    box-shadow: 0 0 0px #ddd;
 }
 /*LOGO*/
 #logo{
-     float:none;
      display:inline-block;
+     padding-top: 1em;
 }
 /* HEADER*/
 #header {
@@ -41,6 +42,7 @@ Version: 1.0
 #header-content{
     display: inline-block;
     float:right;
+    padding-bottom: 0.5em;
 }
 
 #header-search{
@@ -53,6 +55,10 @@ Version: 1.0
         background: rgb(0, 42, 92) none repeat scroll 0% 0%;
        border-bottom: 1px solid #000;
 }
+/*SECOND BOX*/
+#second-box {
+  float:right;
+}
 /*NAVIGATION*/
 #navi-wrap {
         margin: 0px auto;
@@ -60,11 +66,12 @@ Version: 1.0
         background: rgb(0, 42, 92) none repeat scroll 0% 0%;
 }
 #navi-wrap, #social-icons-menu li a:hover{
-    background-color: #FBFBFB;
+    background-color:#FFCE3E ;
 }
 #mainnav{
       width: 960px;
       text-align:center;
+
 }
 #mainnav-menu a {
 	padding: 0.5em !important;
@@ -147,7 +154,8 @@ html {
   border-width: 1px;
   border-color: white;
   float: right;
-  margin-right:1.5em
+  margin-right:1.5em;
+  margin-bottom: 0.5em;
 }
 
 i {
@@ -239,12 +247,17 @@ i {
 
 /*news*/
 #news{
-  width: 27%%;
+  width: 26%%;
   float:left;
+  padding-left:0.5em;
 }
-
+#sidebar {
+  width: 26%;
+}
 #content{
-  width: 45%;
+  width: 46%;
+  padding-right:0em;
+  padding-left:0.5em;
 }
 
 /*end of body*/

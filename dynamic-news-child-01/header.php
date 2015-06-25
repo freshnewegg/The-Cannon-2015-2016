@@ -44,13 +44,16 @@
 			
 			</div>
 			
-			<div id="header-content" class="clearfix">
+			<div id="second box" class="clearfix">
+				<div id="header-content" class="clearfix">
 				<?php locate_template('/inc/header-content.php', true); ?>
-			</div>
+				</div>
 
 			<!--this is onasvi's weather-->
-			<div id="weather">
+				<div id="weather">
+				</div>
 			</div>
+			
 	
 
 		</header>

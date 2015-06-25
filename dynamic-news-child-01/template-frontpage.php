@@ -11,9 +11,7 @@ Template Name: Magazine Front Page
 	
 	<div id="wrap" class="container clearfix template-frontpage">
 		<!--added new column, called it tertiary, name not confirmed-->
-		<section id="news">
-			<p> shits real</p>
-		</section>
+		<?php get_sidebar(); ?>
 		<section id="content" class="primary" role="main">
 		<?php // Display Featured Post Slideshow if activated
 		if ( isset($theme_options['slider_activated_front_page']) and $theme_options['slider_activated_front_page'] == true ) :
@@ -43,8 +41,30 @@ Template Name: Magazine Front Page
 		<?php endif; ?>
 
 		</section>
+
+		<section id="news">
+			
+				<?php // Display Frontpage Widgets
+		if(is_active_sidebar('frontpage-magazine')) : ?>
+
+			<div id="frontpage-magazine-widgets" class="clearfix">
+
+				<?php dynamic_sidebar('frontpage-magazine'); ?>
+
+			</div>
+
+		<?php // Display Description about FrontPage Widgets when widget area is empty
+		else : ?>
+
+			<p class="frontpage-magazine-no-widgets">
+				<?php _e('There are no widgets to be displayed. Please go to Appearance → Widgets and add at least one widget to the "Magazine Front Page" widget area. You can use the three Category Posts widgets to set up the theme like the demo website.', 'dynamicnews'); ?>
+			</p>
+
+		<?php endif; ?>
+			</p>
+		</section>
 		
-		<?php get_sidebar(); ?>
+		
 	
 	</div>
 	
