@@ -67,8 +67,12 @@ function dynamicnews_css_layout() {
 		echo '<style type="text/css">
 			@media only screen and (min-width: 60em) {
 				#content {
-					/*float: right;*/
+					float: right;
 					padding-right: 0;
+					padding-left: 1.5em;
+				}
+				.page-id-4604 #content{
+					float: left;
 					/*padding-left: 1.5em;*/
 				}
 				#sidebar {

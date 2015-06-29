@@ -23,6 +23,10 @@ Version: 1.0
 .widget {
     padding:1em;
     box-shadow: 0 0 0px #ddd;
+    
+}
+.widgettitle {
+  font-family: 'EB Garamond', Georgia, serif !important;
 }
 /*LOGO*/
 #logo{
@@ -89,6 +93,9 @@ Version: 1.0
      font-size: 2.0em;
      padding:0px;
      border-bottom: 0px !important;
+     text-transform: none;
+     font-family: 'EB Garamond', Georgia, serif !important;
+     font-size:1.5em;
 }
 /*POSTMETA*/
 .postmeta{
@@ -244,20 +251,37 @@ i {
 /*end of weather*/
 
 /*start of body*/
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
 
+body {
+  font-family: 'EB Garamond', Georgia, serif !important;
+  font-size: 0.9em;
+}
 /*news*/
 #news{
   width: 26%%;
   float:left;
   padding-left:0.5em;
 }
-#sidebar {
+
+#content{
+}
+
+.page-id-4604 #news {
+  width: 26%%;
+  float:left;
+  padding-left:0.5em;
+}
+
+.page-id-4604 #sidebar {
   width: 26%;
 }
-#content{
+
+.page-id-4604 #content{
   width: 46%;
   padding-right:0em;
   padding-left:0.5em;
 }
+
 
 /*end of body*/
