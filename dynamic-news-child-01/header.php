@@ -44,7 +44,7 @@
 			
 			</div>
 			
-			<div id="second box" class="clearfix">
+			<div id="second-box" class="clearfix">
 				<div id="header-content" class="clearfix">
 				<?php locate_template('/inc/header-content.php', true); ?>
 				</div>
