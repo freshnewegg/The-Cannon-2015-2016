@@ -28,6 +28,9 @@ Version: 1.0
 .widgettitle {
   font-family: 'EB Garamond', Georgia, serif !important;
 }
+.widget-category-posts .type-post .post-title {
+  font-size: 1.5em;
+}
 /*LOGO*/
 #logo{
      display:inline-block;
@@ -89,12 +92,26 @@ Version: 1.0
 
 /*title font*/
 .post-title{
-     font-size: 2.0em;
      padding:0px;
      border-bottom: 0px !important;
      text-transform: none;
-     font-family: 'EB Garamond', Georgia, serif !important;
-     font-size:1.5em;
+     font-family: 'EB Garamond', serif !important;
+     
+}
+
+.page-title, .post-title, .post-title a:link, .post-title a:visited, 
+.archive-title span, .postmeta a:link, .postmeta a:visited, 
+#comments .comments-title, #respond #reply-title{
+    color: #002A5C;
+}
+/*SLIDER*/
+
+#frontpage-slider .zeeslide .slide-title {
+  font-family: 'EB Garamond', serif !important;
+  border-bottom: 0px solid #ddd !important;
+  margin-bottom: 0em !important;
+  text-transform: none !important;
+  color: #FFCE3E !important;
 }
 /*POSTMETA*/
 .postmeta{
@@ -157,7 +174,7 @@ html {
   font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   border-radius:20px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 0px;
   border-color: white;
   float: right;
   margin-right:1.5em;
@@ -250,11 +267,16 @@ i {
 /*end of weather*/
 
 /*start of body*/
-@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
+@font-face {
+    font-family: 'EB Garamond';
+    src: url("font/ebgaramond.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
 
 body {
-  font-family: 'EB Garamond', Georgia, serif !important;
-  font-size: 0.9em;
+  font-family: 'EB Garamond', serif !important;
+  font-size: 1em;
 }
 /*news*/
 #news{

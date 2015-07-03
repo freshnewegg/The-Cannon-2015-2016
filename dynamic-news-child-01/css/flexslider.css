@@ -62,28 +62,23 @@ html[xmlns] .zeeslides {display: block;}
 	word-wrap: break-word;
 	margin-top: 1px;
 	padding: 1em 1.5em;
-	color: #fff;
+	color: #FFCE3E;
 	background: #333;
 	border-top: 10px solid #e84747;
 }
-/*TEMPORARY EDIT*/
-#frontpage-slider .zeeslide .slide-title{
-	color:#FFCE3E;
-}
 #frontpage-slider .zeeslide .slide-title {
-	font-family: 'Francois One', Tahoma, Verdana, Arial;
+	font-family: 'EB Garamond', serif !important;
 	font-size: 1.3em;
 	font-weight: bold;
-	color: #fff;
+	color: #FFCE3E;
 	line-height: 1.4em;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
-	text-transform: uppercase;
+	text-transform: none;
 	padding: 0.2em 0;
-	border-bottom: 2px solid #ddd;
-	margin-bottom: 1em;
+	border-bottom: 0px solid #ddd;
+	margin-bottom: 0em;
 }
-
 #frontpage-slider .zeeslide .slide-title a:link, #frontpage-slider .zeeslide .slide-title a:visited {
 	color: #fff;
 	text-decoration: none;
