@@ -104,6 +104,11 @@ Version: 1.0
 #comments .comments-title, #respond #reply-title{
     color: #002A5C;
 }
+
+.widget-tabnavi li a.current-tab {
+  text-decoration: none;
+  text-transform: uppercase;
+}
 /*SLIDER*/
 
 #frontpage-slider .zeeslide .slide-title {
@@ -304,5 +309,11 @@ body {
   padding-left:0.5em;
 }
 
+/*FOOTER*/
+#footernav-menu a:link, #footernav-menu a:visited {
+  color: #002a5c;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue";
+}
 
 /*end of body*/
