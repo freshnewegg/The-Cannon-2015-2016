@@ -71,6 +71,10 @@ function dynamicnews_css_layout() {
 					padding-right: 0;
 					padding-left: 1.5em;
 				}
+				.page-id-4604 #content{
+					float: left;
+					/*padding-left: 1.5em;*/
+				}
 				#sidebar {
 					float: left;
 				}

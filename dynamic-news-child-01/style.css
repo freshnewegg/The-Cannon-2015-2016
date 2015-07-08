@@ -22,11 +22,19 @@ Version: 1.0
 }
 .widget {
     padding:1em;
+    box-shadow: 0 0 0px #ddd;
+    
+}
+.widgettitle {
+  font-family: 'EB Garamond', Georgia, serif !important;
+}
+.widget-category-posts .type-post .post-title {
+  font-size: 1.5em;
 }
 /*LOGO*/
 #logo{
-     float:none;
      display:inline-block;
+     padding-top: 1em;
 }
 /* HEADER*/
 #header {
@@ -36,10 +44,16 @@ Version: 1.0
 #header-content div {
        margin-top:1.5em;
        margin-right:1.5em;
+       margin-left:0em;
 }
 #header-content{
     display: inline-block;
     float:right;
+    padding-bottom: 0.5em;
+}
+
+#header-search{
+    padding-top:0.6em;
 }
 
 #header-wrap {
@@ -47,7 +61,9 @@ Version: 1.0
         max-width: 100%;
         background: rgb(0, 42, 92) none repeat scroll 0% 0%;
        border-bottom: 1px solid #000;
-       text-align:end;
+}
+/*SECOND BOX*/
+#second-box {
 }
 /*NAVIGATION*/
 #navi-wrap {
@@ -56,11 +72,12 @@ Version: 1.0
         background: rgb(0, 42, 92) none repeat scroll 0% 0%;
 }
 #navi-wrap, #social-icons-menu li a:hover{
-    background-color: #FBFBFB;
+    background-color:#FFCE3E ;
 }
 #mainnav{
       width: 960px;
       text-align:center;
+
 }
 #mainnav-menu a {
 	padding: 0.5em !important;
@@ -75,9 +92,31 @@ Version: 1.0
 
 /*title font*/
 .post-title{
-     font-size: 2.0em;
      padding:0px;
      border-bottom: 0px !important;
+     text-transform: none;
+     font-family: 'EB Garamond', serif !important;
+     
+}
+
+.page-title, .post-title, .post-title a:link, .post-title a:visited, 
+.archive-title span, .postmeta a:link, .postmeta a:visited, 
+#comments .comments-title, #respond #reply-title{
+    color: #002A5C;
+}
+
+.widget-tabnavi li a.current-tab {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/*SLIDER*/
+
+#frontpage-slider .zeeslide .slide-title {
+  font-family: 'EB Garamond', serif !important;
+  border-bottom: 0px solid #ddd !important;
+  margin-bottom: 0em !important;
+  text-transform: none !important;
+  color: #FFCE3E !important;
 }
 /*POSTMETA*/
 .postmeta{
@@ -140,11 +179,15 @@ html {
   font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   border-radius:20px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 0px;
+  border-color: white;
+  float: right;
+  margin-right:1.5em;
+  margin-bottom: 0.5em;
 }
 
 i {
-  color: #000;
+  color: white;
   font-family: weather;
   font-size: 21px;
   font-weight: normal;
@@ -203,7 +246,7 @@ i {
 
 #weather h2 {
   margin: 0 0 2px;
-  color: #000;
+  color: white;
   font-size: 14px;
   font-weight: 300;
   text-align: center;
@@ -227,3 +270,50 @@ i {
   margin: 0 20px;
 }
 /*end of weather*/
+
+/*start of body*/
+@font-face {
+    font-family: 'EB Garamond';
+    src: url("font/ebgaramond.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+  font-family: 'EB Garamond', serif !important;
+  font-size: 1em;
+}
+/*news*/
+#news{
+  width: 26%%;
+  float:left;
+  padding-left:0.5em;
+}
+
+#content{
+}
+
+.page-id-4604 #news {
+  width: 26%%;
+  float:left;
+  padding-left:0.5em;
+}
+
+.page-id-4604 #sidebar {
+  width: 26%;
+}
+
+.page-id-4604 #content{
+  width: 46%;
+  padding-right:0em;
+  padding-left:0.5em;
+}
+
+/*FOOTER*/
+#footernav-menu a:link, #footernav-menu a:visited {
+  color: #002a5c;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue";
+}
+
+/*end of body*/
