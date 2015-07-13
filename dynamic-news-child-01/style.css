@@ -34,7 +34,7 @@ Version: 1.0
 /*LOGO*/
 #logo{
      display:inline-block;
-     padding-top: 1em;
+     padding-top: 0.5em;
 }
 /* HEADER*/
 #header {
@@ -50,6 +50,7 @@ Version: 1.0
     display: inline-block;
     float:right;
     padding-bottom: 0.5em;
+    margin-top: 0.5em;
 }
 
 #header-search{
