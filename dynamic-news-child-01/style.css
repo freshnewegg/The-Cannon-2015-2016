@@ -26,15 +26,15 @@ Version: 1.0
     
 }
 .widgettitle {
-  font-family: 'EB Garamond', Georgia, serif !important;
+  font-family: 'Crimson', Georgia, serif !important;
 }
 .widget-category-posts .type-post .post-title {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 /*LOGO*/
 #logo{
      display:inline-block;
-     padding-top: 1em;
+     padding-top: 0.5em;
 }
 /* HEADER*/
 #header {
@@ -50,6 +50,7 @@ Version: 1.0
     display: inline-block;
     float:right;
     padding-bottom: 0.5em;
+    margin-top: 0.5em;
 }
 
 #header-search{
@@ -95,8 +96,9 @@ Version: 1.0
      padding:0px;
      border-bottom: 0px !important;
      text-transform: none;
-     font-family: 'EB Garamond', serif !important;
-     
+     font-family: 'Crimson', serif !important;
+     font-size: 2em !important;
+     font-weight: normal;
 }
 
 .page-title, .post-title, .post-title a:link, .post-title a:visited, 
@@ -112,7 +114,7 @@ Version: 1.0
 /*SLIDER*/
 
 #frontpage-slider .zeeslide .slide-title {
-  font-family: 'EB Garamond', serif !important;
+  font-family: 'Crimson', serif !important;
   border-bottom: 0px solid #ddd !important;
   margin-bottom: 0em !important;
   text-transform: none !important;
@@ -122,6 +124,14 @@ Version: 1.0
 .postmeta{
      background: #fff none repeat scroll 0% 0% !important;
      padding: 0px !important;
+}
+
+.postmeta a:link, .postmeta a:visited {
+  text-decoration: none;
+  font
+}
+.postmeta a:hover {
+  text-decoration: underline;
 }
 /* post area*/
 .primary .type-post, .type-page, .type-attachment{
@@ -279,8 +289,15 @@ i {
     font-weight: 400;
 }
 
+@font-face {
+    font-family: 'Crimson';
+    src: url("font/crimson.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
 body {
-  font-family: 'EB Garamond', serif !important;
+  font-family: 'Crimson', serif !important;
   font-size: 1em;
 }
 /*news*/
@@ -310,10 +327,27 @@ body {
 }
 
 /*FOOTER*/
+#footernav {
+  float:none;
+  text-align: center;
+}
+
 #footernav-menu a:link, #footernav-menu a:visited {
   color: #002a5c;
   text-transform: uppercase;
   font-family: "Helvetica Neue";
+  list-style-type: none;
+  list-style-position: outside;
+  position: relative;
+  float: left;
 }
-
+#footernav-menu {
+  float: none;
+}
+#footernav-menu li {
+  float:none;
+  display:inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+}
 /*end of body*/
