@@ -45,4 +45,4 @@ if ( ! function_exists( 'dynamicnews_display_postinfo_single' ) ):
 
 	}
 	
-endif;
+endif;?>
