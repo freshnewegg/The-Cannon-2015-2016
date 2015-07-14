@@ -1,5 +1,5 @@
 <ul>
-  <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(2) ) : else : ?>
+  <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(1) ) : else : ?>
   <li>
     <h2>
       <?php _e('Categories'); ?>

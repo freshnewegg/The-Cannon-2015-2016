@@ -46,3 +46,79 @@ if ( ! function_exists( 'dynamicnews_display_postinfo_single' ) ):
 	}
 	
 endif;?>
+<?php
+add_action( 'widgets_init', 'dynamicnews_register_sidebars' );
+
+if ( ! function_exists( 'dynamicnews_register_sidebars' ) ):
+function dynamicnews_register_sidebars() {
+	//added a second sidebar just for news!
+	register_sidebar( array(
+		'name' => __( 'News Sidebar', 'dynamicnews' ),
+		'id' => 'news-sidebar',
+		'description' => __( 'sidebar just for news.', 'dynamicnews' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s clearfix">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widgettitle"><span>',
+		'after_title' => '</span></h3>',
+	));
+
+	// Register Sidebars
+	register_sidebar( array(
+		'name' => __( 'Sidebar', 'dynamicnews' ),
+		'id' => 'sidebar',
+		'description' => __( 'Appears on posts and pages except front page and fullwidth template.', 'dynamicnews' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s clearfix">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widgettitle"><span>',
+		'after_title' => '</span></h3>',
+	));
+	register_sidebar( array(
+		'name' => __( 'Magazine Front Page', 'dynamicnews' ),
+		'id' => 'frontpage-magazine',
+		'description' => __( 'Appears on Magazine Front Page page template only. You can use the Category Posts widgets here.', 'dynamicnews' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widgettitle">',
+		'after_title' => '</h3>',
+	));
+
+	//Register Footer Widgets
+	register_sidebar( array(
+		'name' => __( 'Footer Left', 'dynamicnews' ),
+		'id' => 'footer-left',
+		'description' => __( 'Appears on footer on the left hand side.', 'dynamicnews' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widgettitle">',
+		'after_title' => '</h3>',
+	));
+	register_sidebar( array(
+		'name' => __( 'Footer Center Left', 'dynamicnews' ),
+		'id' => 'footer-center-left',
+		'description' => __( 'Appears on footer on center left position.', 'dynamicnews' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widgettitle">',
+		'after_title' => '</h3>',
+	));
+	register_sidebar( array(
+		'name' => __( 'Footer Center Right', 'dynamicnews' ),
+		'id' => 'footer-center-right',
+		'description' => __( 'Appears on footer on center right position.', 'dynamicnews' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widgettitle">',
+		'after_title' => '</h3>',
+	));
+	register_sidebar( array(
+		'name' => __( 'Footer Right', 'dynamicnews' ),
+		'id' => 'footer-right',
+		'description' => __( 'Appears on footer on the right hand side.', 'dynamicnews' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widgettitle">',
+		'after_title' => '</h3>',
+	));
+}
+endif;
+?>

@@ -49,7 +49,7 @@ Template Name: Magazine Front Page
 
 			<div id="frontpage-magazine-widgets" class="clearfix">
 
-				<?php dynamic_sidebar('frontpage-magazine'); ?>
+				<?php dynamic_sidebar('news-sidebar'); ?>
 
 			</div>
 
